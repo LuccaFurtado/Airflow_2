@@ -9,7 +9,7 @@ from airflow.providers.amazon.aws.operators.athena import AWSAthenaOperator
 from athena_query import ticker_query
 import datetime
 
-region_name="us-east-1"
+
 with DAG(
     dag_id='aws_tickers',
     description="DAG to colect ibov/SeP500/USD-BRL store in s3 and use anthena to get insights",
