@@ -34,11 +34,3 @@ def _get_data(s3_id, s3_bucket,**context):
             replace=True,
             )
 
-#%%
-from yahooquery import Ticker
-
-ticker = Ticker(["^BVSP","^GSPC","USDBRL=X"])
-data = ticker.history(start='2022-01-01', end= '2022-02-01').reset_index()
-
-data
-# %%
